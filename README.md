@@ -7,9 +7,14 @@
 1. GKE cluster作成
 2. ワークロード作成（既存Nginxサンプルで作成）
 3. Internalロードバランサ作成、IP記録　参照：https://cloud.google.com/kubernetes-engine/docs/how-to/internal-load-balancing?hl=ja
-4. アクセスしてみる  
-   4.1 インタネットより  
-   4.2 VMより
+4. アクセスしてみる
+   <img width="825" alt="image" src="https://github.com/gerraywang/test-cloudruntogke/assets/59221195/510da1e5-40a9-4e3a-ba75-5a222c2e4ac2">
+   4.1 インタネットより NG  
+   <img width="1038" alt="image" src="https://github.com/gerraywang/test-cloudruntogke/assets/59221195/874f4b09-1af5-4d3c-974a-b6ca658c5c83">
+
+   4.2 VMより OK
+    <img width="894" alt="image" src="https://github.com/gerraywang/test-cloudruntogke/assets/59221195/a2921e33-fa0f-4364-bbf1-a39374adfd95">
+   
 5. ./DockerfileでCloud RUN作成（VPCアクセスコネクター作成）
 6. アクセスしてみる  
    6.1 VPCアクセスコネクターを外すと　　NG  
