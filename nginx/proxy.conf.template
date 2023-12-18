@@ -1,0 +1,11 @@
+server {
+
+  server_name _;
+
+  location / {
+    proxy_pass $DESTINATION_PATH;
+  }
+
+  access_log  /dev/stdout  main;
+  error_log   /dev/stderr  warn;
+}
